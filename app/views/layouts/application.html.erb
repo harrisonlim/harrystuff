@@ -29,7 +29,22 @@
 	<hr />
 	<br class="clear" />
 
+<div class="container">
 <%= yield %>
+</div>
+
+
+<div class="footer">
+  <div class="container">
+      <div class="col-xs-6">
+      	<%= link_to "GIMME MOAR QUOTES", "#", :class => 'next-quote' %>
+      </div>
+      <div class="col-xs-6 footer-blurb">
+      	Proudly hacked in Singapore, SG by <a href="http://codeordietrying.tumblr.com">Harrison Lim</a><br />
+      	Want to build your own Splurty Web App - <a href="http://thefirehoseproject.com">Learn how to code here</a>
+      </div>
+  </div>
+</div>
 
 </body>
 </html>
