@@ -9,20 +9,22 @@
 <body>
 	<header>
 	  <div class="col-xs-3">
-		<div class="circle">
-		  <br />
-		  YOU
-		  <br />
-		  OUGHTA
-		  <br />
-		  LOOK OUT
-		</div>
+	  	<%= link_to root_path, :class => 'logo' do %>
+			<div class="circle">
+			  <br />
+			  YOU
+			  <br />
+			  OUGHTA
+			  <br />
+			  LOOK OUT
+			</div>
+		<% end %>
 	  </div>
 	  <div class="col-xs-4 slogan">
 	  	Cook Your Meat Till It's Done. <br>'Cause You Only Live Once.
 	  </div>
 	  <div class="col-xs-5 links">
-	  	<%= link_to 'Contribute', '#' %>
+	  	<%= link_to 'Contribute', new_quote_path %>
 	  	<%= link_to 'About', '#' %>
 	  </div>
 	</header>
@@ -37,7 +39,7 @@
 <div class="footer">
   <div class="container">
       <div class="col-xs-6">
-      	<%= link_to "GIMME MOAR QUOTES", "#", :class => 'next-quote' %>
+      	<%= link_to "GIMME MOAR QUOTES", root_path, :class => 'next-quote' %>
       </div>
       <div class="col-xs-6 footer-blurb">
       	Proudly hacked in Singapore, SG by <a href="http://codeordietrying.tumblr.com">Harrison Lim</a><br />
