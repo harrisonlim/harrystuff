@@ -20,12 +20,13 @@
 			</div>
 		<% end %>
 	  </div>
-	  <div class="col-xs-4 slogan">
-	  	Cook Your Meat Till It's Done. <br>'Cause You Only Live Once.
+	  <div class="col-xs-4 hidden-xs slogan">
+	  	Cook Your Meat Till It's Done. 'Cause You Only Live Once.
 	  </div>
 	  <div class="col-xs-5 links">
 	  	<!-- Button trigger modal -->
 		<%= link_to 'Contribute', '#', :data => {:toggle => 'modal', :target => '#myModal'} %>
+		&nbsp;&nbsp;
 	  	<%= link_to 'About', about_path %>
 	  </div>
 	</header>
@@ -40,8 +41,9 @@
 	      </div>
 	      <%= simple_form_for Quote.new do |f| %>
 	        <div class="modal-body">
-			  <%= f.input :saying %>
-			  <%= f.input :author %>
+			  <%= f.input :saying, :label => "What is the saying that you want to add?", :placeholder => "Eg. A fun thing to do in the morning is not talk to me." %>
+			  <br />
+			  <%= f.input :author, :label => "Who is the author of the quote?", :placeholder => "Eg. Me." %>
 			  <br />
 	        </div>
 	        <div class="modal-footer">
@@ -70,10 +72,10 @@
 
 <div class="footer">
   <div class="container">
-      <div class="col-xs-6">
+      <div class="col-xs-12 col-sm-6">
       	<%= link_to "GIMME MOAR QUOTES", root_path, :class => 'next-quote' %>
       </div>
-      <div class="col-xs-6 footer-blurb">
+      <div class="col-xs-12 col-sm-6 footer-blurb">
       	Proudly hacked in Singapore, SG by <a href="http://codeordietrying.tumblr.com">Harrison Lim</a><br />
       	Want to build your own Splurty Web App - <a href="http://thefirehoseproject.com">Learn how to code here</a>
       </div>
