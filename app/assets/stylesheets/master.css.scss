@@ -1,6 +1,3 @@
-@import url(http://fonts.googleapis.com/css?family=Coming+Soon);
-@import url(http://fonts.googleapis.com/css?family=Amatic+SC:400,700);
-
 .clear {
 	clear:both;
 }
@@ -40,11 +37,10 @@ L", Georgia, serif;
 
 .links a {
 	color:black;
-	font-size: 25px;
+	font-size: 36px;
 	border-bottom: 1px solid #dfdfdf;
-    font-family: 'Amatic SC', sans-serif;
+    font-family: 'amaticbold', sans-serif;
     font-weight:bold;
-    text-decoration: none;
 
 }
 
@@ -57,18 +53,18 @@ hr {
 }
 
 h1 {
-    font-family: 'Amatic SC';
+    font-family: 'amatic_scregular';
     font-size: 56px;
 }
 
 h2 {
-    font-family: 'Coming Soon';
+    font-family: 'coming_soonregular';
     font-size: 28px;
 }
 
 .next-quote {
     color:#f84342;
-    font-family: 'Coming Soon';
+    font-family: 'coming_soonregular';
     font-size: 20px;
 }
 
@@ -101,8 +97,8 @@ L", Georgia, serif;
 }
 
 h2 span {
-    color: #dddddd;
-    font-family: 'Amatic SC';
+    color: #CACACA;
+    font-family: 'coming_soonregular';
 }
 
 ::selection {
