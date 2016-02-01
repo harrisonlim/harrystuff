@@ -1,5 +1,2 @@
 == README
 
-"Bak Chor Mee is delish."
-
-- Harrison
