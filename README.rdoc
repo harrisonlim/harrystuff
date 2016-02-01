@@ -1,8 +1,3 @@
-== README
-
-<<<<<<< HEAD
-=======
-"Bak Chor Mee is delish."
+"Spicy Bak Chor Mee is delish."
 
 - Marco
->>>>>>> master
